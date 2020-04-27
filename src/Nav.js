@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-
 const Div = styled.div`
   width: 100%;
   height: 5rem;
@@ -15,14 +14,14 @@ const Div = styled.div`
     button {
       height: 60%;
       width: 7rem;
-      color: white;
+      color: black;
       font-size: 1.2rem;
-      background: teal;
+      background: red;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       &:hover {
-        background: green;
+        background: white;
       }
     }
   }
