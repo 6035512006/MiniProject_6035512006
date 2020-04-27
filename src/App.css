@@ -55,3 +55,23 @@ a{
   text-decoration: none;
   color: white;
 }
+
+img{
+  height: 250px;
+  width: 400px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.image{
+  margin-right: 10px;
+  margin-left: 10px;
+  
+  
+}

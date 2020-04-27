@@ -1,5 +1,6 @@
 import React from 'react'
-import Home from './components/Home'
+import Head from './components/Head'
+import Product1 from './components/Product1'
 import './App.css'
 
 
@@ -9,7 +10,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <Head />
+        <Product1 />
+        
       </div>
     )
   }
