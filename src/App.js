@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from './components/Head'
-import Product1 from './components/Product1'
+import Product from './components/Product'
 import './App.css'
 
 
@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Head />
-        <Product1 />
+        <Product />
         
       </div>
     )

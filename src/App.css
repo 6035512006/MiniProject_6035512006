@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: 'Roboto',sans-serif;
 }
+body {
+  background-color: black;
+  
+}
 
 header{
   background-image: url('./images/header.jpg');
@@ -57,8 +61,8 @@ a{
 }
 
 img{
-  height: 250px;
-  width: 400px;
+  height: 230px;
+  width: 390px;
 }
 
 .container{
@@ -72,6 +76,34 @@ img{
 .image{
   margin-right: 10px;
   margin-left: 10px;
-  
-  
+  position: relative;
+
+}
+
+.add{
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  transition: all;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9{
+  bottom:50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+h3{
+  color: white;
 }
