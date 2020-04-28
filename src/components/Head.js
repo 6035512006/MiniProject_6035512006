@@ -1,8 +1,8 @@
 import React from 'react'
 
-class Head extends React.Component {
+const Head = () => {
 
-    render() {
+    
         return (
             <div>
                 <header>
@@ -25,7 +25,7 @@ class Head extends React.Component {
             </div>
         )
     }
-}
+
 
 
 
