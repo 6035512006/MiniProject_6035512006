@@ -1,33 +1,50 @@
-import React from 'react'
-import Head from './components/Head'
-import Product from './components/Product'
-import './App.css'
-import {Provider} from 'react-redux'
-import store from './store.js'
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+import Products from "./components/Products";
+import store from "./store";
+import "./App.css";
 
 
 
-class App extends React.Component {
+
+import Nav from './Nav'
+import Modal from './Modal'
+
+
+
+
+
+class App extends Component {
+
+  state = {
+    signinOpen: false
+  }
+
+  
+  handleSignin = () => this.setState({ signinOpen: true })
+  handleClose = () => this.setState({ signinOpen: false })
 
   render() {
     return (
       <Provider store={store}>
-      <div className="App">
-        <Head />
-        <Product />
-        
+
+
+        <div>
+        <Nav handleSignin={this.handleSignin}/>
+        <div>
+          {(this.state.signinOpen) && ( <Modal state={this.state} handleClose={this.handleClose} />)}
+        </div>
       </div>
+
+
+        <div className="container">
+          <h4>Select product to the cart</h4>
+          <hr />
+              <Products />
+          </div>
       </Provider>
-    )
+    );
   }
-
-
-
-
-
 }
 
-
-
-
-export default App
+export default App;

@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import Basket from "./Basket";
 
 const FormDiv = styled.div`
   top: 0;
   position: relative;
-  background: white;
+  background: black;
   width: 60%;
   margin: 0 auto;
   padding: 1rem 0;
@@ -55,24 +55,10 @@ const SigninForm = ({ handleClose }) => {
   return (
     
       <FormDiv>
-        <h1>Sign In</h1>
+        <h1>Cart</h1>
         <FormDiv>
           <form>
-            <input
-              className='input'
-              type='email'
-              name='email'
-              placeholder='Email'
-              autoComplete='off'
-            />
-            <input
-              className='input'
-              type='password'
-              name='password'
-              placeholder='Password'
-              autoComplete='off'
-            />
-            <button className='bttn'>Submit</button>
+            <Basket />
           </form>
           <h3 onClick={handleClose}>&times;</h3>
         </FormDiv>
