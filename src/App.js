@@ -17,12 +17,12 @@ import Modal from './Modal'
 class App extends Component {
 
   state = {
-    signinOpen: false
+    cartOpen: false
   }
 
   
-  handleSignin = () => this.setState({ signinOpen: true })
-  handleClose = () => this.setState({ signinOpen: false })
+  handleCart = () => this.setState({ cartOpen: true })
+  handleClose = () => this.setState({ cartOpen: false })
 
   render() {
     return (
@@ -30,9 +30,9 @@ class App extends Component {
 
 
         <div>
-        <Nav handleSignin={this.handleSignin}/>
+        <Nav handleCart={this.handleCart}/>
         <div>
-          {(this.state.signinOpen) && ( <Modal state={this.state} handleClose={this.handleClose} />)}
+          {(this.state.cartOpen) && ( <Modal state={this.state} handleClose={this.handleClose} />)}
         </div>
       </div>
 

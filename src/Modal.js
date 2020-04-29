@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import SigninForm from './components/SigninForm'
+import CartForm from './components/CartForm'
 
 const Div = styled.div`
   margin: 0 auto;
@@ -9,10 +9,10 @@ const Div = styled.div`
 `
 
 const Modal = ({ state, handleClose }) => {
-  const { signinOpen } = state
+  const { cartOpen } = state
   return (
     <> 
-      {signinOpen && (<Div><SigninForm handleClose={handleClose} /></Div>)}
+      {cartOpen && (<Div><CartForm handleClose={handleClose} /></Div>)}
     </>
   )
 }
