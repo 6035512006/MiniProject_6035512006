@@ -6,7 +6,7 @@ const FormDiv = styled.div`
   top: 0;
   position: relative;
   background: black;
-  width: 60%;
+  width: 60;
   margin: 0 auto;
   padding: 1rem 0;
   border-radius: 4px;

@@ -5,7 +5,7 @@ import CartForm from './components/CartForm'
 const Div = styled.div`
   margin: 0 auto;
   margin-top: -4rem;
-  width: 60%;
+  width: 60;
 `
 
 const Modal = ({ state, handleClose }) => {
